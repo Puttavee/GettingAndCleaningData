@@ -350,6 +350,8 @@ str(TrainFeatures)
 \#\#     [list output truncated]  
 
 ##1.	Merges the training and the test sets to create one data set. (Merges “train” and “test” sets to create one data set)  
+After setting the source directory for the files, row bind, set name, and merge column.
+
 **1) Row bind data**  
 
 ```
@@ -371,7 +373,8 @@ CombineData <- cbind(SubjectData, ActivityData)
 Data <- cbind(FeaturesData, CombineData)  
 ```
 
-##2.	Extracts only the measurements on the mean and standard deviation for each measurement.  
+##2.	Extracts only the measurements on the mean and standard deviation for each measurement.
+
 ###2-1 Subset Name of Features by measurements on the “mean” and “standard deviation” i.e taken Names of Features with “mean()” or “std()”  
 
 ```
